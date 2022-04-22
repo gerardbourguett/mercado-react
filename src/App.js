@@ -14,8 +14,8 @@ function App() {
           <NavLink to="/" className="btn btn-dark">
             Inicio
           </NavLink>
-          <NavLink to="/tabla" className="btn btn-dark">
-            Tabla
+          <NavLink to="/licitacion" className="btn btn-dark">
+            Licitaciones MP
           </NavLink>
           <NavLink to="/contacto" className="btn btn-dark">
             Contacto
@@ -26,9 +26,9 @@ function App() {
         </div>
         <hr />
         <Routes>
-          <Route path="/detalle/:id" element={<Detalle />}></Route>
+          <Route path="/licitacion/:id" element={<Detalle />}></Route>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/tabla" element={<Tabla />}></Route>
+          <Route path="/licitacion" element={<Tabla />}></Route>
           <Route path="/contacto" element={<Contacto />}></Route>
           <Route path="/acerca" element={<Acerca />}></Route>
         </Routes>
